@@ -13,10 +13,8 @@ const showProducts = (products) => {
     const div = document.createElement("div");
     div.classList.add("col");
     div.innerHTML = `      
-        <div class="h -100 single-product">
-          
-          <img id="product-image" src=${image} class="card-img-top img-fluid " alt="..."></img>
-          
+        <div class="h -100 single-product">         
+          <img id="product-image" src=${image} class="card-img-top img-fluid " alt="..."></img>         
           <div class="card-body">
             <h3>${product?.title?.slice(0, 15)}</h3>
             <p>Category: ${product.category}</p>
